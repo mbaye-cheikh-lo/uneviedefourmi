@@ -4,13 +4,14 @@ class Anthill {
   Anthill();
   ~Anthill();
 public:
-  int room;
-  int tunnels;
+  short room;
+  short tunnels;
   int start;
   int end;
+  unsigned short ants;
 public:
-  int add_room();
-  int add_tunnel();
-  int create_ants();
+  void add_room();
+  void add_tunnel();
+  void create_ants();
   
 };
