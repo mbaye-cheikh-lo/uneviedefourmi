@@ -3,16 +3,11 @@
 Ant::Ant(int i, Room* start) {
 
     id = i;
-    currentRoom = start;
+    current = start;
     finished = false;
 }
 
-void Ant::move(Room* nextRoom) {
+void Ant::move(Room* r) {
 
-    currentRoom = nextRoom;
-}
-
-bool Ant::hasFinished() {
-
-    return finished;
+    current = r;
 }

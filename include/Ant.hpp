@@ -8,14 +8,12 @@ class Ant {
 public:
 
     int id;
-    Room* currentRoom;
+    Room* current;
     bool finished;
 
     Ant(int i, Room* start);
 
-    void move(Room* nextRoom);
-
-    bool hasFinished();
+    void move(Room* r);
 };
 
 #endif

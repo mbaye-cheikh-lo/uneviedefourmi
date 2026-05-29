@@ -18,7 +18,7 @@ void Parser::parse(Anthill& anthill) {
     fin >> anthill.antCount;
 
     string line;
-    while (getline(fin, line)) {
+ while (getline(fin, line)) {
 
         if (line.empty())
             continue;
